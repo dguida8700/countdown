@@ -34,10 +34,12 @@
       border-radius: 12px;
       justify-content: center;
       margin-bottom: 20px;
+      flex-wrap: wrap;
     }
 
     .time {
       margin: 0 15px;
+      text-align: center;
     }
 
     .time span {
@@ -60,33 +62,87 @@
     .expired {
       color: #ff4d4d;
     }
+
+    /* Responsività per schermi piccoli */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      #countdown {
+        font-size: 2.5rem;
+        padding: 10px 20px;
+      }
+
+      .time {
+        margin: 10px;
+      }
+
+      .time span {
+        font-size: 1rem;
+      }
+
+      .description {
+        font-size: 1rem;
+      }
+
+      #invitation {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      #countdown {
+        font-size: 2rem;
+      }
+
+      .time {
+        margin: 5px;
+      }
+
+      .time span {
+        font-size: 0.9rem;
+      }
+
+      .description {
+        font-size: 0.9rem;
+      }
+
+      #invitation {
+        font-size: 1.2rem;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <h1>Porchetta Day 2025</h1>
+  <h1>Porchetta Day 21 Maggio 2025 - 20:30</h1>
 
   <div id="countdown">
     <div class="time" id="days">
       <span id="days-number">0</span>
-      <span>Day</span>
+      <span>Giorni</span>
     </div>
     <div class="time" id="hours">
       <span id="hours-number">0</span>
-      <span>Hours</span>
+      <span>Ore</span>
     </div>
     <div class="time" id="minutes">
       <span id="minutes-number">0</span>
-      <span>Minutes</span>
+      <span>Minuti</span>
     </div>
     <div class="time" id="seconds">
       <span id="seconds-number">0</span>
-      <span>Seconds</span>
+      <span>Secondi</span>
     </div>
   </div>
 
   <div class="description">
-    <span>Location: La Chianina di Modena</span>
+    <span>Tempo rimanente fino al grande evento!</span>
   </div>
 
   <div id="invitation">
